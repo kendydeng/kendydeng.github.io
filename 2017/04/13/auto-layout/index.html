@@ -415,10 +415,10 @@
 <li><mark>Pin：定位。建立间距约束条件，如：控件离屏幕上、右、下、左的间距。</mark></li>
 </ul>
 <p>所以设计师出标注稿给工程师的时候，需要写明对齐方式和定位。比如 A 和 B 之间的距离是多少？居中还是左对齐？某控件如果固定在左下方是不是要标明距离左侧和下方的距离……等等。</p>
-<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>因为尺寸不同所以版面跑位的情况，可以透过设定 Auto Layout 解决。设好后 Storyboard 会出现几条辅助线。</p>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>因为尺寸不同所以控件错位的情况，可以透过设定 Auto Layout 解决。设好后 Storyboard 会出现几条辅助线。</p>
 <h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><center><br><img src="https://img.akanelee.me/20160408-3.png" alt="Title Screenshot"><br></center>
 
-<p>不管萤幕尺寸变化，标题都希望要置中，且距离顶端的位置要固定。</p>
+<p>不管屏幕尺寸变化，标题都希望要居中，且距离顶部的位置要固定。</p>
 <h3 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h3><center><br><img src="https://img.akanelee.me/20160408-4.png" alt="Button Screenshot"><br></center>
 
 <p>按钮设为「水平对齐」、「垂直对齐」。这样不管在哪种萤幕尺寸下它都在正中间。</p>
@@ -436,7 +436,7 @@
 </ol>
 <p>如果是为了看更大的画面，功能元件几乎相同，用 Auto Layout 我觉得很方便省事。</p>
 <p>如果会触发不同功能甚至换个介面，那用 Auto Layout 想干嘛？当然是刻个新的 UI 啊！</p>
-<h3 id="为什么-Universal-App-要用-Auto-Layout"><a href="#为什么-Universal-App-要用-Auto-Layout" class="headerlink" title="为什么 Universal App 要用 Auto Layout"></a>为什么 Universal App 要用 Auto Layout</h3><p>同上方的理由，iPad 的介面和 iPhone 的介面会完全一样吗？iPad 萤幕比 iPhone 大那么多，操作情境、功能复杂度不会一样。</p>
+<h3 id="为什么-Universal-App-要用-Auto-Layout"><a href="#为什么-Universal-App-要用-Auto-Layout" class="headerlink" title="为什么 Universal App 要用 Auto Layout"></a>为什么 Universal App 要用 Auto Layout</h3><p>同上方的理由，iPad 的界面和 iPhone 的界面会完全一样吗？iPad 屏幕屏幕比 iPhone 大那么多，操作情境、功能复杂度不会一样。</p>
 <p>而且，在开启 App 时就判定 App 被装在哪种装置上，读取 iPad 或 iPhone 的程式码，都比用 Auto Layout 干脆实在啊。</p>
 <h2 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋"></a>彩蛋</h2><p><a href="http://www.appcoda.com.tw/introduction-auto-layout/" target="_blank" rel="external">Auto Layout 入门教学</a> 一文说明介绍 Xcode Auto Layout 设定方式、详细操作等，可以去看这个网页喔！</p>
 

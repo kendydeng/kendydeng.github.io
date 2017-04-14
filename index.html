@@ -29,7 +29,7 @@
 
     <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0097A7">
+    <meta name="theme-color" content="#1976D2">
     <meta name="author" content="DHui">
     <meta name="description" content="null">
     <meta name="keywords" content="UI, UX, Design, Blog">
@@ -84,7 +84,7 @@
   }
 
   a {
-    color: #00838F;
+    color: #1565C0;
   }
 
   .mdl-card__media,
@@ -94,13 +94,13 @@
   #scheme-Paradox .sidebar_archives-count,
   #scheme-Paradox .sidebar-colored .sidebar-header,
   #scheme-Paradox .sidebar-colored .sidebar-badge{
-    background-color: #0097A7 !important;
+    background-color: #1976D2 !important;
   }
 
   /* Sidebar User Drop Down Menu Text Color */
   #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
   #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
-    color: #0097A7 !important;
+    color: #1976D2 !important;
   }
 
   #post_entry-right-info,
@@ -113,7 +113,7 @@
   .sidebar-colored .sidebar-nav > .open > a:hover,
   .sidebar-colored .sidebar-nav > .open > a:focus,
   #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
-    color: #0097A7 !important;
+    color: #1976D2 !important;
   }
 
   .toTop {
@@ -135,7 +135,7 @@
   }
 
   .post-toc a:hover {
-    color: #00838F;
+    color: #1565C0;
     text-decoration: underline;
   }
 
@@ -145,8 +145,13 @@
 <!-- Theme Background Related-->
 
     <style>
-      body{
-        background-image: url(/img/bg.png);
+      body {
+        background-color: undefined;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text {
+        background-color: #fff;
       }
     </style>
 
@@ -191,6 +196,12 @@
 
 
     <!-- Bing Background -->
+    
+        <script type="text/javascript">
+            queue.offer(function(){
+                $('body').attr('data-original', 'https://api.i-meto.com/bing?null');
+            });
+        </script>
     
 
     <!-- Custom Head -->
@@ -292,6 +303,12 @@
             <span class="visuallyhidden">Pages</span>
         </button>
         <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="show-pages-button">
+            
+                <a class="index_share-link" href="/about" title="关于我">
+                    <li class="mdl-menu__item mdl-js-ripple-effect">
+                        关于我
+                    </li>
+                </a>
             
         </ul>
 
@@ -591,6 +608,16 @@
     
 
     <!-- Pages  -->
+    
+        <li>
+            <a href="/about" title="关于我">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于我
+            </a>
+        </li>
+        
     
 
     <!-- Article Number  -->
